@@ -1,6 +1,6 @@
+import os
 from datetime import datetime, timedelta
 
-import os
 import requests
 from geopy.geocoders import Nominatim
 
@@ -9,7 +9,6 @@ from ezw_model import WeatherReport
 DARK_SKY_API_KEY = os.environ['DARK_SKY_KEY']
 option_list = "exclude=currently,minutely,hourly,alerts&amp;units=si"
 
-print(DARK_SKY_API_KEY)
 
 class EZWController:
 
